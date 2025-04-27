@@ -10,11 +10,10 @@ function WeatherApp() {
     const [city, setCity] = useState('');
 
     const fetchWeather = async () => {
-        
-        const apiKey = 'f07078bdbb38baefc6bd30da37eaee23';
+
+        const apiKey = process.env.REACT_APP_API_KEY;
 
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-
 
         try {
         
