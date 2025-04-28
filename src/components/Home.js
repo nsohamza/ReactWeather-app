@@ -1,20 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import  '../../src/Home.css'
 
-// Home component represents the landing page of the app
+
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to the Weather App</h1>
-        <p>Check the Weather for Any City</p>
+      <h1 className='mt-2 text-blue-400 font-extrabold text-3xl uppercase'>Welcome to the Weather App</h1>
+        <p className='mt-2 text-xl uppercase font-bold'>Check the Weather for Any City</p>
 
-        {/* Link to the weather page */}
-        <Link to="/weather" className='get-started-button'>Get Started</Link>
-
+        <Link to="/weather" className='text-base uppercase mt-2 py-3 px-8 font-semibold bg-blue-400 text-white no-underline rounded-2xl duration-75 hover:bg-blue-700 inline-block'>Get Started</Link>
     </div>
-   
+
   )
 }
 
-export default Home // export the Home component for use in APP.js because that where it will be rendered.
+export default Home 
+
+
